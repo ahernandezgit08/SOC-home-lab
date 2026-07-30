@@ -27,17 +27,16 @@ Network Topology & Architecture
 
 
 Infrastructure & Subnet Mapping
-==========================================================================================================================
-HOST NAME       ROLE / OS                ZONE              ADAPTER    SUBNET            IP ADDRESS        GATEWAY
-==========================================================================================================================
-OPNsense        Firewall / Router        Multi-Homed       VMnet8     192.168.116.0/24  192.168.116.148   ISP Gateway
-                                                           VMnet3     192.168.80.2/24   192.168.80.2          --
-                                                           VMnet2     192.168.50.2/24   192.168.50.2          --
-Wazuh-SIEM      SIEM / RHEL 10           SOC Management    VMnet3     192.168.80.2/24   192.168.80.10     192.168.80.2
-DC01            AD DC / Win Server 2019  Corporate LAN     VMnet2     192.168.50.2/24   192.168.52.14     192.168.50.2
-WIN10-01        Workstation / Win 10     Corporate LAN     VMnet2     192.168.50.2/24   192.168.50.13     192.168.50.2
-Kali-Attacker   Adversary / Kali Linux   WAN / External    VMnet8     192.168.116.0/24  192.168.116.130   192.168.116.2
-===========================================================================================================================
+
+| Host Name | OS / Role | Zone | Adapter | Subnet | IP Address | Gateway |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **OPNsense** | Firewall / Router | WAN / External | `VMnet8` | `192.168.116.0/24` | `192.168.116.148` | ISP Gateway |
+| **OPNsense** | Firewall / Router | SOC Management | `VMnet3` | `192.168.80.0/24` | `192.168.80.2` | — |
+| **OPNsense** | Firewall / Router | Corporate LAN | `VMnet2` | `192.168.50.0/24` | `192.168.50.2` | — |
+| **Wazuh-SIEM** | RHEL 10 (SIEM) | SOC Management | `VMnet3` | `192.168.80.0/24` | `192.168.80.10` | `192.168.80.2` |
+| **DC01** | Win Server 2019 (AD) | Corporate LAN | `VMnet2` | `192.168.50.0/24` | `192.168.52.14` | `192.168.50.2` |
+| **WIN10-01** | Windows 10 Host | Corporate LAN | `VMnet2` | `192.168.50.0/24` | `192.168.50.13` | `192.168.50.2` |
+| **Kali-Attacker** | Kali Linux | WAN / External | `VMnet8` | `192.168.116.0/24` | `192.168.116.130` | `192.168.116.2` |
 
 
 Phases

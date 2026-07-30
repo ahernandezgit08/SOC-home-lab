@@ -7,23 +7,23 @@ A multi-zone Security Operations Center (SOC) homelab built using VMware Worksta
 
 Network Topology & Architecture
 -------------------------------
-                                              [ VMnet8: WAN / External ]
-                                                          | 
-                                                          |
-                                                [ Kali Linux Attacker ]
-                                                          |
-                                                          v
-                                              +-------------------------+
-                                              |    OPNsense Firewall    |
-                                              +-------------------------+
-                                                /                     \
-                                               /                       \
-                                [ VMnet3: SOC Management ]    [ VMnet2: Corporate LAN ]
-                                             |                             |
-                                 [ RHEL 10 + Wazuh SIEM ]        +-------------------+
-                                                                 | Win Server 2019   |
-                                                                 | Windows 10 Host   |
-                                                                 +-------------------+
+                                    [ VMnet8: WAN / External ]
+                                                | 
+                                                |
+                                      [ Kali Linux Attacker ]
+                                                |
+                                                v
+                                    +-------------------------+
+                                    |    OPNsense Firewall    |
+                                    +-------------------------+
+                                      /                     \
+                                     /                       \
+                        [ VMnet3: SOC Management ]    [ VMnet2: Corporate LAN ]
+                                   |                             |
+                        [ RHEL 10 + Wazuh SIEM ]        +-------------------+
+                                                        |  Win Server 2019  |
+                                                        |  Windows 10 Host  |
+                                                        +-------------------+
 
 
 Phases

@@ -34,7 +34,7 @@ Infrastructure & Subnet Mapping
 | **OPNsense** | Firewall / Router | SOC Management | `VMnet3` | `192.168.80.0/24` | `192.168.80.2` | — |
 | **OPNsense** | Firewall / Router | LAN            | `VMnet2` | `192.168.50.0/24` | `192.168.50.2` | — |
 | **Wazuh-SIEM** | RHEL 10 (SIEM)  | SOC Management  | `VMnet3` | `192.168.80.0/24` | `192.168.80.10` | `192.168.80.2` |
-| **DC01** | Win Server 2019 (AD)  | LAN             | `VMnet2` | `192.168.50.0/24` | `192.168.52.14` | `192.168.50.2` |
+| **DC01** | Win Server 2019 (AD)  | LAN             | `VMnet2` | `192.168.50.0/24` | `192.168.50.14` | `192.168.50.2` |
 | **WIN10-01** | Windows 10 Host   | LAN              | `VMnet2` | `192.168.50.0/24` | `192.168.50.13` | `192.168.50.2` |
 | **Kali-Attacker** | Kali Linux   | WAN / External   | `VMnet8` | `192.168.116.0/24` | `192.168.116.130` | `192.168.116.2` |
 
